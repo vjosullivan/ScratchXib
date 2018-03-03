@@ -13,12 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        let personViewModel = PersonViewModel(personModel: PersonModel())
+        let personViewController = PersonViewController(personViewModel: personViewModel)
+
         window = UIWindow(frame: UIScreen.main.bounds)
-        let personViewController = UIViewController()
-        personViewController.view.backgroundColor = UIColor.red
         window!.rootViewController = personViewController
         window!.makeKeyAndVisible()
 

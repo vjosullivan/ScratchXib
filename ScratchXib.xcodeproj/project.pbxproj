@@ -60,8 +60,8 @@
 		F142C7FD204A90F200C43C78 /* ScratchXib */ = {
 			isa = PBXGroup;
 			children = (
-				F142C810204A911400C43C78 /* Person */,
 				F142C7FE204A90F200C43C78 /* AppDelegate.swift */,
+				F142C810204A911400C43C78 /* Person */,
 				F142C805204A90F200C43C78 /* Assets.xcassets */,
 				F142C807204A90F200C43C78 /* LaunchScreen.storyboard */,
 				F142C80A204A90F200C43C78 /* Info.plist */,

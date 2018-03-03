@@ -9,5 +9,23 @@
 import Foundation
 
 class PersonViewModel {
-    
+
+    // MARK: - Properties.
+
+    private let personModel: PersonModel
+
+    public var name: String {
+        get {
+            return personModel.name
+        }
+        set {
+            personModel.name = newValue
+        }
+    }
+
+    // MARK: - Initializers.
+
+    init(personModel: PersonModel) {
+        self.personModel = personModel
+    }
 }
