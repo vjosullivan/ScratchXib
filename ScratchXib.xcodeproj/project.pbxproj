@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F142C7FF204A90F200C43C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C7FE204A90F200C43C78 /* AppDelegate.swift */; };
-		F142C801204A90F200C43C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C800204A90F200C43C78 /* ViewController.swift */; };
-		F142C804204A90F200C43C78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F142C802204A90F200C43C78 /* Main.storyboard */; };
 		F142C806204A90F200C43C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F142C805204A90F200C43C78 /* Assets.xcassets */; };
 		F142C809204A90F200C43C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F142C807204A90F200C43C78 /* LaunchScreen.storyboard */; };
+		F142C812204A913300C43C78 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F142C811204A913300C43C78 /* PersonView.xib */; };
+		F142C814204A914100C43C78 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C813204A914100C43C78 /* PersonModel.swift */; };
+		F142C816204A914E00C43C78 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C815204A914E00C43C78 /* PersonViewModel.swift */; };
+		F142C818204A916000C43C78 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C817204A916000C43C78 /* PersonViewController.swift */; };
+		F142C81A204A92C700C43C78 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C819204A92C700C43C78 /* PersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F142C7FB204A90F200C43C78 /* ScratchXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F142C7FE204A90F200C43C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F142C800204A90F200C43C78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F142C803204A90F200C43C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F142C805204A90F200C43C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F142C808204A90F200C43C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F142C80A204A90F200C43C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F142C811204A913300C43C78 /* PersonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
+		F142C813204A914100C43C78 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		F142C815204A914E00C43C78 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		F142C817204A916000C43C78 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		F142C819204A92C700C43C78 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		F142C7FD204A90F200C43C78 /* ScratchXib */ = {
 			isa = PBXGroup;
 			children = (
+				F142C810204A911400C43C78 /* Person */,
 				F142C7FE204A90F200C43C78 /* AppDelegate.swift */,
-				F142C800204A90F200C43C78 /* ViewController.swift */,
-				F142C802204A90F200C43C78 /* Main.storyboard */,
 				F142C805204A90F200C43C78 /* Assets.xcassets */,
 				F142C807204A90F200C43C78 /* LaunchScreen.storyboard */,
 				F142C80A204A90F200C43C78 /* Info.plist */,
 			);
 			path = ScratchXib;
+			sourceTree = "<group>";
+		};
+		F142C810204A911400C43C78 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				F142C813204A914100C43C78 /* PersonModel.swift */,
+				F142C815204A914E00C43C78 /* PersonViewModel.swift */,
+				F142C817204A916000C43C78 /* PersonViewController.swift */,
+				F142C819204A92C700C43C78 /* PersonView.swift */,
+				F142C811204A913300C43C78 /* PersonView.xib */,
+			);
+			path = Person;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F142C809204A90F200C43C78 /* LaunchScreen.storyboard in Resources */,
+				F142C812204A913300C43C78 /* PersonView.xib in Resources */,
 				F142C806204A90F200C43C78 /* Assets.xcassets in Resources */,
-				F142C804204A90F200C43C78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +153,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F142C801204A90F200C43C78 /* ViewController.swift in Sources */,
+				F142C81A204A92C700C43C78 /* PersonView.swift in Sources */,
+				F142C816204A914E00C43C78 /* PersonViewModel.swift in Sources */,
+				F142C814204A914100C43C78 /* PersonModel.swift in Sources */,
 				F142C7FF204A90F200C43C78 /* AppDelegate.swift in Sources */,
+				F142C818204A916000C43C78 /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F142C802204A90F200C43C78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F142C803204A90F200C43C78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F142C807204A90F200C43C78 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
