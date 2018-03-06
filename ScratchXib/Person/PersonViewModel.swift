@@ -8,24 +8,43 @@
 
 import Foundation
 
-class PersonViewModel {
+protocol ObservablePersonViewModel {
+    var name: Observable<String> { get }
 
-    // MARK: - Properties.
+    func updateName(_ name: String)
+}
 
-    private let personModel: PersonModel
+class PersonViewModel: ObservablePersonViewModel {
 
-    public var name: String {
-        get {
-            return personModel.name
-        }
-        set {
-            personModel.name = newValue
-        }
-    }
+    // MARK: - Properties
 
-    // MARK: - Initializers.
+    private var personModel: PersonModelProtocol
 
-    init(personModel: PersonModel) {
+    public let name: Observable<String>
+
+    // MARK: - Initializers
+
+    init(personModel: PersonModelProtocol) {
         self.personModel = personModel
+        name = Observable(self.personModel.name)
+        self.personModel.delegate = self
+    }
+}
+
+extension PersonViewModel {
+
+    // MARK: Functions that update the model.
+
+    public func updateName(_ name: String) {
+        personModel.name = name
+    }
+}
+
+extension PersonViewModel: PersonModelDelegate {
+
+    // MARK: - Functions that observe the model.
+
+    func person(_ person: PersonModelProtocol, didUpdateName name: String) {
+        self.name.value = name
     }
 }

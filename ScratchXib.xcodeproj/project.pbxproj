@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1285693204E847B00D7CE47 /* PersonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1285692204E847B00D7CE47 /* PersonViewModelTests.swift */; };
+		F1285695204E849A00D7CE47 /* DummyPersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1285694204E849A00D7CE47 /* DummyPersonModel.swift */; };
+		F1285697204E937600D7CE47 /* PersonViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1285696204E937600D7CE47 /* PersonViewControllerTests.swift */; };
+		F135188C204E7A0100A28370 /* PersonModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135188B204E7A0100A28370 /* PersonModelTests.swift */; };
+		F135188E204E7F4000A28370 /* DummyPersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F135188D204E7F4000A28370 /* DummyPersonViewModel.swift */; };
 		F142C7FF204A90F200C43C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C7FE204A90F200C43C78 /* AppDelegate.swift */; };
 		F142C806204A90F200C43C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F142C805204A90F200C43C78 /* Assets.xcassets */; };
 		F142C809204A90F200C43C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F142C807204A90F200C43C78 /* LaunchScreen.storyboard */; };
@@ -15,9 +20,27 @@
 		F142C816204A914E00C43C78 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C815204A914E00C43C78 /* PersonViewModel.swift */; };
 		F142C818204A916000C43C78 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C817204A916000C43C78 /* PersonViewController.swift */; };
 		F142C81A204A92C700C43C78 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C819204A92C700C43C78 /* PersonView.swift */; };
+		F142C822204AFDF000C43C78 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F142C821204AFDF000C43C78 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F1351885204E78FC00A28370 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F142C7F3204A90F200C43C78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F142C7FA204A90F200C43C78;
+			remoteInfo = ScratchXib;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F1285692204E847B00D7CE47 /* PersonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModelTests.swift; sourceTree = "<group>"; };
+		F1285694204E849A00D7CE47 /* DummyPersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPersonModel.swift; sourceTree = "<group>"; };
+		F1285696204E937600D7CE47 /* PersonViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewControllerTests.swift; sourceTree = "<group>"; };
+		F1351880204E78FB00A28370 /* ScratchXibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchXibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1351884204E78FC00A28370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F135188B204E7A0100A28370 /* PersonModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModelTests.swift; sourceTree = "<group>"; };
+		F135188D204E7F4000A28370 /* DummyPersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyPersonViewModel.swift; sourceTree = "<group>"; };
 		F142C7FB204A90F200C43C78 /* ScratchXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F142C7FE204A90F200C43C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F142C805204A90F200C43C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,9 +51,17 @@
 		F142C815204A914E00C43C78 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
 		F142C817204A916000C43C78 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 		F142C819204A92C700C43C78 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		F142C821204AFDF000C43C78 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F135187D204E78FB00A28370 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F142C7F8204A90F200C43C78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +72,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1351881204E78FC00A28370 /* ScratchXibTests */ = {
+			isa = PBXGroup;
+			children = (
+				F135188A204E793A00A28370 /* Person */,
+				F1351884204E78FC00A28370 /* Info.plist */,
+			);
+			path = ScratchXibTests;
+			sourceTree = "<group>";
+		};
+		F135188A204E793A00A28370 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				F135188B204E7A0100A28370 /* PersonModelTests.swift */,
+				F1285692204E847B00D7CE47 /* PersonViewModelTests.swift */,
+				F1285696204E937600D7CE47 /* PersonViewControllerTests.swift */,
+				F1285694204E849A00D7CE47 /* DummyPersonModel.swift */,
+				F135188D204E7F4000A28370 /* DummyPersonViewModel.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
 		F142C7F2204A90F200C43C78 = {
 			isa = PBXGroup;
 			children = (
 				F142C7FD204A90F200C43C78 /* ScratchXib */,
+				F1351881204E78FC00A28370 /* ScratchXibTests */,
 				F142C7FC204A90F200C43C78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F142C7FB204A90F200C43C78 /* ScratchXib.app */,
+				F1351880204E78FB00A28370 /* ScratchXibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +116,7 @@
 			children = (
 				F142C7FE204A90F200C43C78 /* AppDelegate.swift */,
 				F142C810204A911400C43C78 /* Person */,
+				F142C820204AFDD400C43C78 /* Utility */,
 				F142C805204A90F200C43C78 /* Assets.xcassets */,
 				F142C807204A90F200C43C78 /* LaunchScreen.storyboard */,
 				F142C80A204A90F200C43C78 /* Info.plist */,
@@ -81,9 +136,35 @@
 			path = Person;
 			sourceTree = "<group>";
 		};
+		F142C820204AFDD400C43C78 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				F142C821204AFDF000C43C78 /* Observable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F135187F204E78FB00A28370 /* ScratchXibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1351889204E78FC00A28370 /* Build configuration list for PBXNativeTarget "ScratchXibTests" */;
+			buildPhases = (
+				F135187C204E78FB00A28370 /* Sources */,
+				F135187D204E78FB00A28370 /* Frameworks */,
+				F135187E204E78FB00A28370 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1351886204E78FC00A28370 /* PBXTargetDependency */,
+			);
+			name = ScratchXibTests;
+			productName = ScratchXibTests;
+			productReference = F1351880204E78FB00A28370 /* ScratchXibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F142C7FA204A90F200C43C78 /* ScratchXib */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F142C80D204A90F200C43C78 /* Build configuration list for PBXNativeTarget "ScratchXib" */;
@@ -111,6 +192,12 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Vincent O'Sullivan";
 				TargetAttributes = {
+					F135187F204E78FB00A28370 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F142C7FA204A90F200C43C78;
+					};
 					F142C7FA204A90F200C43C78 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -131,11 +218,19 @@
 			projectRoot = "";
 			targets = (
 				F142C7FA204A90F200C43C78 /* ScratchXib */,
+				F135187F204E78FB00A28370 /* ScratchXibTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F135187E204E78FB00A28370 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F142C7F9204A90F200C43C78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,12 +244,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F135187C204E78FB00A28370 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1285697204E937600D7CE47 /* PersonViewControllerTests.swift in Sources */,
+				F1285693204E847B00D7CE47 /* PersonViewModelTests.swift in Sources */,
+				F1285695204E849A00D7CE47 /* DummyPersonModel.swift in Sources */,
+				F135188E204E7F4000A28370 /* DummyPersonViewModel.swift in Sources */,
+				F135188C204E7A0100A28370 /* PersonModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F142C7F7204A90F200C43C78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F142C81A204A92C700C43C78 /* PersonView.swift in Sources */,
 				F142C816204A914E00C43C78 /* PersonViewModel.swift in Sources */,
+				F142C822204AFDF000C43C78 /* Observable.swift in Sources */,
 				F142C814204A914100C43C78 /* PersonModel.swift in Sources */,
 				F142C7FF204A90F200C43C78 /* AppDelegate.swift in Sources */,
 				F142C818204A916000C43C78 /* PersonViewController.swift in Sources */,
@@ -162,6 +270,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1351886204E78FC00A28370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F142C7FA204A90F200C43C78 /* ScratchXib */;
+			targetProxy = F1351885204E78FC00A28370 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F142C807204A90F200C43C78 /* LaunchScreen.storyboard */ = {
@@ -175,6 +291,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F1351887204E78FC00A28370 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27QRRWZMS6;
+				INFOPLIST_FILE = ScratchXibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vjosullivan.ScratchXibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchXib.app/ScratchXib";
+			};
+			name = Debug;
+		};
+		F1351888204E78FC00A28370 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 27QRRWZMS6;
+				INFOPLIST_FILE = ScratchXibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vjosullivan.ScratchXibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScratchXib.app/ScratchXib";
+			};
+			name = Release;
+		};
 		F142C80B204A90F200C43C78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,6 +466,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F1351889204E78FC00A28370 /* Build configuration list for PBXNativeTarget "ScratchXibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1351887204E78FC00A28370 /* Debug */,
+				F1351888204E78FC00A28370 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F142C7F6204A90F200C43C78 /* Build configuration list for PBXProject "ScratchXib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

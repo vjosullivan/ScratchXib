@@ -10,32 +10,47 @@ import UIKit
 
 class PersonViewController: UIViewController {
 
-    // MARK: - Properties.
+    // MARK: - Properties
 
-    private let personViewModel: PersonViewModel
+    private var personViewModel: ObservablePersonViewModel
 
     private var personView: PersonView {
         return view as! PersonView
     }
 
-    // MARK: - Initializers.
+    // MARK: - Initializers
 
-    init(personViewModel: PersonViewModel) {
+    init(personViewModel: ObservablePersonViewModel) {
         self.personViewModel = personViewModel
         super.init(nibName: "PersonViewController", bundle: nil)
+        bindViewModel()
     }
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    // MARK: - UIViewController functions.
+    // MARK: - UIViewController Functions
 
     override func loadView() {
         view = PersonView.createPersonView()
     }
 
     override func viewDidLoad() {
-        personView.name.text = personViewModel.name
+        personView.input.becomeFirstResponder()
+    }
+
+    // MARK: - Actions
+
+    @IBAction func nameChanged(_ sender: UITextField) {
+        personViewModel.updateName(sender.text ?? "")
+    }
+
+    // MARK: - Local functions
+
+    private func bindViewModel() {
+        personViewModel.name.bindAndFire { [unowned self] in
+            self.personView.name.text = $0
+        }
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class PersonView: UIView {
 
-    // MARK: - Static functions
+    // MARK: - Static Functions
 
     class func createPersonView() -> PersonView {
         let personNib = UINib(nibName: "PersonView", bundle: nil)
@@ -19,9 +19,10 @@ class PersonView: UIView {
 
     // MARK: - Outlets
 
+    @IBOutlet weak var input: UITextField!
     @IBOutlet weak var name: UILabel!
 
-    // MARK: - Initializers.
+    // MARK: - Initializers
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
